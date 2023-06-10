@@ -1,0 +1,3 @@
+com\automation\Runners\TestMainClass.class
+com\automation\AppTest.class
+com\automation\StepDefinition\BasicAuth.class
