@@ -1,7 +1,7 @@
 @add_and_remove_element
 Feature: Add and remove an element
 
-    Background:
+    Background: landing page
         Given a user is on the website home page
 
     Scenario Outline: Add and remove an element
