@@ -1,15 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: com.automation.Runners.TestMainClass
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.359 s <<< FAILURE! - in com.automation.Runners.TestMainClass
-Enter correct and incorrect login credentials for authentication(Login windows for authentication)  Time elapsed: 8.72 s  <<< ERROR!
-io.cucumber.core.exception.CucumberException: 
-Step [login status] is defined with 0 parameters at 'com.automation.StepDefinition.BasicAuth.login_status()'.
-However, the gherkin step has 1 arguments:
- * Table:
-      | password   | username   |
-      | admin_user | adminXYZ01 |
-      | admin      | admin      |
-
-Step text: login status
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 15.191 s <<< FAILURE! - in com.automation.Runners.TestMainClass
+Enter correct and incorrect login credentials for authentication(Login windows for authentication)  Time elapsed: 14.653 s  <<< ERROR!
+org.openqa.selenium.NoAlertPresentException: 
+no such alert
+  (Session info: chrome=114.0.5735.110)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05213306782d03448e92207fa08303a1, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ciphe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51318}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51318/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 05213306782d03448e92207fa08303a1
 
