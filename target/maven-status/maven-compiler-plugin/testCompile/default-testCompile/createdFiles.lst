@@ -1,3 +1,4 @@
-com\automation\Runners\TestMainClass.class
+com\automation\StepDefinition\ABTesting.class
 com\automation\AppTest.class
-com\automation\StepDefinition\BasicAuth.class
+com\automation\StepDefinition\AddRemoveElements.class
+com\automation\Runners\TestMainClass.class

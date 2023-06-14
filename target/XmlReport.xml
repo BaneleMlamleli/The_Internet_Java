@@ -1,47 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="14.702" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Login windows for authentication" name="Enter correct and incorrect login credentials for authentication" time="14.587">
-<failure type="org.openqa.selenium.NoAlertPresentException" message="no such alert
-  (Session info: chrome=114.0.5735.110)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [05213306782d03448e92207fa08303a1, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ciphe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51318}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51318/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 05213306782d03448e92207fa08303a1">
-<![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=114.0.5735.110)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [05213306782d03448e92207fa08303a1, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ciphe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51318}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51318/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 05213306782d03448e92207fa08303a1
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1079)
-	at com.automation.StepDefinition.BasicAuth.user_enters_the_password_and_username(BasicAuth.java:35)
-	at ?.user enters the <password> and <username>(file:///C:/Users/ciphe/Documents/Programming_local/theinternet/src/test/java/com/automation/Features/BasicAuth.feature:9)
-]]>
-</failure>
+<testsuite name="Cucumber" time="10.862" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Login windows for authentication" name="Enter correct and incorrect login credentials for authentication" time="10.494">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When login pop-up message box is displayed..................................passed
-And user enters the <password> and <username>...............................failed
-Then user clicks on the sign in button......................................skipped
-And login status............................................................skipped
+When user clicks on basic auth..............................................passed
+And user enters the password and username...................................passed
+Then user clicks on the sign in button......................................passed
+And login status............................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
