@@ -8,9 +8,6 @@ import io.cucumber.java.en.*;
 public class BasicAuth {
     WebDriver webDriver = null;
     public String url, completeUrl;
-    String password = "admin";
-    String username = "admin";
-    // Alert alert;
     
     @Given("a user is on the website home page")
     public void a_user_is_on_the_website_home_page() {
@@ -24,8 +21,8 @@ public class BasicAuth {
         url = "@"+ "the-internet.kineticskunk.co.za/basic_auth";
     }
     
-    @And("user enters the password and username")
-    public void user_enters_the_password_and_username() {
+    @And("user enters the {word} and {word}")
+    public void user_enters_the_password_and_username(String username, String password) {
         completeUrl = "https://" + username + ":" + password + url;
         System.out.println("completeUrl: " + completeUrl);
     }
@@ -37,14 +34,12 @@ public class BasicAuth {
     
     @And("login status")
     public void login_status() {
-        String title = webDriver.getTitle();
-        System.out.println("The page title is "+title);
-        String text = webDriver.findElement(By.tagName("p")).getText();
-        System.out.println("The test present in page is ==> "+text);
-        // if(webDriver.findElement(By.xpath("//h3[normalize-space()='Basic Auth']")).isDisplayed()) {
-        //     System.out.println("Successfully logged in");
-        // } else {
-        //     System.out.println("Incorrect login credentials"); //Not authorized
-        // }
+        if (webDriver.findElement(By.xpath("//p[contains(text(),'Congratulations! You must have the proper credenti')]")).isDisplayed()) {
+            System.out.println("Successfully logged in");
+        }
+        
+        if(webDriver.findElement(By.xpath("//body[contains(text(),'Not authorized')]")).isDisplayed()){
+            System.out.println("Incorrect login credentials"); //Not authorized
+        }
     }
 }
