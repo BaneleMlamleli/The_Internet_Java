@@ -1,28 +1,27 @@
 package com.automation.StepDefinition;
 
-import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.en.*;
 
 public class AddRemoveElements {
     WebDriver webDriver = null;
+    int amountOfDeleteButtons = 0;
 
-    // @Given("a user is on the website home page")
-    // public void a_user_is_on_the_website_home_page() {
-    //     System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
-    //     webDriver = new ChromeDriver();
-    //     webDriver.manage().window().maximize();
-    //     webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
-    //     try {
-    //         Thread.sleep(2000);
-    //     } catch (InterruptedException e) {
-    //         e.printStackTrace();
-    //     }
-    // }
+    @Given("a user is on the website home page")
+    public void a_user_is_on_the_website_home_page() {
+        System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
+        webDriver = new ChromeDriver();
+        webDriver.manage().window().maximize();
+        webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
     @When("the user clicks on the AddRemoveElements on the website")
     public void the_user_clicks_on_the_AddRemoveElements_on_the_website() {
@@ -33,6 +32,7 @@ public class AddRemoveElements {
     public void the_user_clicks_on_the_button_AddElement() {
         for (int i = 0; i <= 2; i++) {
             webDriver.findElement(By.xpath("//button[@onclick='addElement()']")).click(); // you can also user: a[href='/add_remove_elements/']
+            amountOfDeleteButtons++;
         }
     }
 
@@ -49,10 +49,15 @@ public class AddRemoveElements {
     
     @And("the user clicks on the button Delete")
     public void the_user_clicks_on_the_button_Delete() {
-        boolean btnDeleteIsDisplayed = webDriver.findElement(By.xpath("//div[@id='elements']//button[1]")).isDisplayed();
-        while (btnDeleteIsDisplayed) {
+        while (amountOfDeleteButtons != 0) {
             webDriver.findElement(By.xpath("//div[@id='elements']//button[1]")).click();
+            amountOfDeleteButtons--;
         }
+        // =============================
+        // boolean btnDeleteIsDisplayed = webDriver.findElement(By.xpath("//div[@id='elements']//button[1]")).isDisplayed();
+        // while (btnDeleteIsDisplayed) {
+        //     webDriver.findElement(By.xpath("//div[@id='elements']//button[1]")).click();
+        // }
         // =============================
         // System.out.println("isDisplayed: " + btnDeleteIsDisplayed);
         // int amountOfDeleteButtons = 0;
