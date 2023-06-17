@@ -1,4 +1,4 @@
-@BasicAuth
+@Basic_auth
 Feature: Login windows for authentication
 
     Background: landing page

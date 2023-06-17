@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="14.969" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Add and remove an element" name="Add and remove an element" time="14.575">
+<testsuite name="Cucumber" time="18.217" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Checking image if it's visible and not broken" name="Checking image is not broken" time="17.211">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When the user clicks on the AddRemoveElements on the website................passed
-And the user clicks on the button AddElement................................passed
-Then the button Delete is displayed.........................................passed
-And the user clicks on the button Delete....................................passed
+When user clicks on broken images...........................................passed
+Then check images...........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

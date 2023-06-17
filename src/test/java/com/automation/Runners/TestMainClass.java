@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
         monochrome = true, 
         plugin = { "pretty", "html:target/HtmlReports.html", "json:target/JsonReports.json",
                 "junit:target/XmlReport.xml" }, 
-        tags = "@add_and_remove_element"
+        tags = "@broken_images"
 )
 public class TestMainClass {
     
