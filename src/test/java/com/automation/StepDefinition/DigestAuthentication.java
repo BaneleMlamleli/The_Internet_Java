@@ -10,12 +10,12 @@ public class DigestAuthentication {
     WebDriver webDriver = null;
     public String url, completeUrl;
     
-    @Given("a user is on the website home page")
-    public void a_user_is_on_the_website_home_page() {
-        System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
-        webDriver = new ChromeDriver();
-        webDriver.manage().window().maximize();
-    }
+    // @Given("a user is on the website home page")
+    // public void a_user_is_on_the_website_home_page() {
+    //     System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
+    //     webDriver = new ChromeDriver();
+    //     webDriver.manage().window().maximize();
+    // }
 
     @When("user clicks on digest authentication")
     public void user_clicks_on_digest_authentication() {
