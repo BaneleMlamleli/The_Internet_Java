@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="8.39" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="This example demonstrates that with unique IDs, a table with no helpful locators, and a canvas element." name="using different non-unique and unique locators to locate elements" time="8.277">
+<testsuite name="Cucumber" time="11.786" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Tick and untick Checkboxes to test if it's ticked or not" name="Tick and untick the Checkboxes" time="11.39">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on Challenging Dom.........................................passed
-And user clicks on the blue, red, green button..............................passed
-And user clicks on edit in the table........................................passed
-Then url is appended with the word edit.....................................passed
-And user clicks on delete in the table......................................passed
-Then url is appended with the word delete...................................passed
-And the answer box changes the number at page load time.....................passed
+When user clicks on Checkboxes..............................................passed
+Then user tick checkbox 1 and untick checkbox 2.............................passed
 ]]></system-out>
 </testcase>
 </testsuite>
