@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="11.786" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Tick and untick Checkboxes to test if it's ticked or not" name="Tick and untick the Checkboxes" time="11.39">
+<testsuite name="Cucumber" time="12.531" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Context menu items are custom additions that appear in the right-click menu. Right-click in the box to trigger a JavaScript alert." name="Right-click in the box to trigger a JavaScript alert." time="12.02">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on Checkboxes..............................................passed
-Then user tick checkbox 1 and untick checkbox 2.............................passed
+When user clicks on Context Menu............................................passed
+And user right-click on the box.............................................passed
+Then JavaScript alert is displayed..........................................passed
+And user clicks okay on the JavaScript alert button.........................passed
 ]]></system-out>
 </testcase>
 </testsuite>
