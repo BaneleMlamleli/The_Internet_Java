@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="12.098" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Demonstration of content by loading new text and images on each page refresh." name="Loading new text and images on each page refresh" time="11.73">
+<testsuite name="Cucumber" time="35.583" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Demonstration of content when elements (e.g., checkbox, input field, etc.) are changed asynchronously." name="Remove/Add - Elements (e.g., checkbox, input field, etc.) are changed asynchronously" time="19.097">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on dynamic content.........................................passed
-Then check images and text change...........................................passed
+When user clicks on dynamic controls........................................passed
+Then user tick the checkbox and clicks on remove button.....................passed
+And wait for loading counter................................................passed
+And Add button is displayed with "It's done" message........................passed
+And clicks on the Add button................................................passed
+And Remove button is displayed with "It's back" message.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Demonstration of content when elements (e.g., checkbox, input field, etc.) are changed asynchronously." name="Enable/Disable - Elements (e.g., checkbox, input field, etc.) are changed asynchronously" time="16.059">
+<system-out><![CDATA[
+Given a user is on the website home page....................................passed
+When user clicks on dynamic controls........................................passed
+Then user clicks on enable button...........................................passed
+And wait for loading counter................................................passed
+And message "It's enabled!" will be displayed...............................passed
+And enter text in the text box and click on Disable again...................passed
+And user clicks on Disable button...........................................passed
+And message "It's disabled!" will be displayed..............................passed
+And check to see text box is editable.......................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
