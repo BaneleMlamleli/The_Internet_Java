@@ -9,18 +9,18 @@ import io.cucumber.java.en.*;
 public class DynamicControls {
     WebDriver webDriver = null;
 
-    @Given("a user is on the website home page")
-    public void a_user_is_on_the_website_home_page() {
-        System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
-        webDriver = new ChromeDriver();
-        webDriver.manage().window().maximize();
-        webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
+    // @Given("a user is on the website home page")
+    // public void a_user_is_on_the_website_home_page() {
+    //     System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
+    //     webDriver = new ChromeDriver();
+    //     webDriver.manage().window().maximize();
+    //     webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
+    //     try {
+    //         Thread.sleep(2000);
+    //     } catch (InterruptedException e) {
+    //         e.printStackTrace();
+    //     }
+    // }
 
     @When("user clicks on dynamic controls")
     public void user_clicks_on_dynamic_content() {
@@ -92,7 +92,6 @@ public class DynamicControls {
         webDriver.findElement(By.xpath("//button[normalize-space()='Disable']")).click();
     }
 
-    // @And("wait for loading counter")
     @And("message \"It\'s disabled!\" will be displayed")
     public void message_its_disabled_will_be_displayed() {
         if (webDriver.findElement(By.xpath("//p[@id='message']")).getText().contains("It's disabled!")) {

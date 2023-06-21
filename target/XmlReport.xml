@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="35.583" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="Demonstration of content when elements (e.g., checkbox, input field, etc.) are changed asynchronously." name="Remove/Add - Elements (e.g., checkbox, input field, etc.) are changed asynchronously" time="19.097">
+<testsuite name="Cucumber" time="33.762" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Demonstration of loading when action gets triggered that returns a result dynamically. It does not rely on the page to reload or finish loading. The page automatically gets updated through the use of JavaScript." name="Example 1: Element on page that is hidden" time="18.243">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on dynamic controls........................................passed
-Then user tick the checkbox and clicks on remove button.....................passed
-And wait for loading counter................................................passed
-And Add button is displayed with "It's done" message........................passed
-And clicks on the Add button................................................passed
-And Remove button is displayed with "It's back" message.....................passed
+When user clicks on Dynamically Loading.....................................passed
+And user clicks on example 1................................................passed
+Then start button is displayed and user clicks on the button................passed
+And waiting for loading counter.............................................passed
+And Hello World is displayed................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Demonstration of content when elements (e.g., checkbox, input field, etc.) are changed asynchronously." name="Enable/Disable - Elements (e.g., checkbox, input field, etc.) are changed asynchronously" time="16.059">
+<testcase classname="Demonstration of loading when action gets triggered that returns a result dynamically. It does not rely on the page to reload or finish loading. The page automatically gets updated through the use of JavaScript." name="Example 2: Element rendered after the fact" time="15.095">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on dynamic controls........................................passed
-Then user clicks on enable button...........................................passed
-And wait for loading counter................................................passed
-And message "It's enabled!" will be displayed...............................passed
-And enter text in the text box and click on Disable again...................passed
-And user clicks on Disable button...........................................passed
-And message "It's disabled!" will be displayed..............................passed
-And check to see text box is editable.......................................passed
+When user clicks on Dynamically Loading.....................................passed
+And user clicks on example 2................................................passed
+Then start button is displayed and user clicks on the button................passed
+And waiting for loading counter.............................................passed
+And Hello World is displayed................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
