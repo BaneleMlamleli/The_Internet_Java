@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="33.762" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="Demonstration of loading when action gets triggered that returns a result dynamically. It does not rely on the page to reload or finish loading. The page automatically gets updated through the use of JavaScript." name="Example 1: Element on page that is hidden" time="18.243">
+<testsuite name="Cucumber" time="13.212" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Demonstration of Modal." name="Clicking Modal to close it and triggering a Modal to display" time="12.791">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on Dynamically Loading.....................................passed
-And user clicks on example 1................................................passed
-Then start button is displayed and user clicks on the button................passed
-And waiting for loading counter.............................................passed
-And Hello World is displayed................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Demonstration of loading when action gets triggered that returns a result dynamically. It does not rely on the page to reload or finish loading. The page automatically gets updated through the use of JavaScript." name="Example 2: Element rendered after the fact" time="15.095">
-<system-out><![CDATA[
-Given a user is on the website home page....................................passed
-When user clicks on Dynamically Loading.....................................passed
-And user clicks on example 2................................................passed
-Then start button is displayed and user clicks on the button................passed
-And waiting for loading counter.............................................passed
-And Hello World is displayed................................................passed
+When user clicks on Entry Ad................................................passed
+And check modal is display..................................................passed
+And to re-enable it click link..............................................passed
+Then click on close button on the modal.....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
