@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
         monochrome = true, 
         plugin = { "pretty", "html:target/HtmlReports.html", "json:target/JsonReports.json",
                 "junit:target/XmlReport.xml" }, 
-        tags = "@EntryAd"
+        tags = "@ExitIntent"
 )
 public class TestMainClass {
     

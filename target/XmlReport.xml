@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="13.212" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Demonstration of Modal." name="Clicking Modal to close it and triggering a Modal to display" time="12.791">
+<testsuite name="Cucumber" time="15.005" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Demonstration of Modal with Mouse out of the viewport pane and see a modal window appear." name="Clicking Modal" time="14.448">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on Entry Ad................................................passed
-And check modal is display..................................................passed
-And to re-enable it click link..............................................passed
-Then click on close button on the modal.....................................passed
+When user clicks on Exit Intent.............................................passed
+Then move mouse out of the viewport pane and click on close button on the modal.passed
 ]]></system-out>
 </testcase>
 </testsuite>
