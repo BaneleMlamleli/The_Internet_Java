@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="22.777" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Demonstration of Floating Menu." name="Floating menu selection" time="22.363">
+<testsuite name="Cucumber" time="31.721" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Demonstration of password reset." name="Password reset - Example #1.1" time="16.45">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on Floating Menu...........................................passed
-Then user clicks on the individual menu tabs................................passed
+When user clicks on Forgot Password.........................................passed
+Then user enter their email address 20489-52348oiweogg#l;aksdf.com.test.....passed
+And user clicks on retrieve password button.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Demonstration of password reset." name="Password reset - Example #1.2" time="14.788">
+<system-out><![CDATA[
+Given a user is on the website home page....................................passed
+When user clicks on Forgot Password.........................................passed
+Then user enter their email address mlamlelibanele@yahoo.com................passed
+And user clicks on retrieve password button.................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
