@@ -19,18 +19,18 @@ public class FileUpload {
     WebDriver webDriver = null;
     Actions actions = null;
 
-    @Given("a user is on the website home page")
-    public void a_user_is_on_the_website_home_page() {
-        System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
-        webDriver = new ChromeDriver();
-        webDriver.manage().window().maximize();
-        webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
+    // @Given("a user is on the website home page")
+    // public void a_user_is_on_the_website_home_page() {
+    //     System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
+    //     webDriver = new ChromeDriver();
+    //     webDriver.manage().window().maximize();
+    //     webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
+    //     try {
+    //         Thread.sleep(2000);
+    //     } catch (InterruptedException e) {
+    //         e.printStackTrace();
+    //     }
+    // }
 
     @When("user clicks on File Upload")
     public void user_clicks_on_file_upload() {
@@ -55,6 +55,7 @@ public class FileUpload {
         }
     }
     
+    // Not working, I think I need to use the AutoIt for Windows GUI manipulation
     @Then("user drags a file from system into the website upload box")
     public void user_drags_a_file_from_system_into_the_website_upload_box() {
         try {

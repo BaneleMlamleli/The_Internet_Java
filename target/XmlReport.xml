@@ -1,46 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="14.474" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Demonstration of File upload. Choose a file on your system and then click upload. Or, drag and drop a file into the area below." name="Drag and dop file to upload" time="14.039">
-<failure type="org.openqa.selenium.ElementNotInteractableException" message="element not interactable
-  (Session info: chrome=114.0.5735.134)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2e23262057968c0d564b670519667aae, sendKeysToElement {id=110AB10BE74FBD4F9B572E853C211FE1_element_10, value=[Ljava.lang.CharSequence;@102efc59}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\BANELE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65156}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65156/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2e23262057968c0d564b670519667aae)] -&gt; id: drag-drop-upload]
-Session ID: 2e23262057968c0d564b670519667aae">
-<![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=114.0.5735.134)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2e23262057968c0d564b670519667aae, sendKeysToElement {id=110AB10BE74FBD4F9B572E853C211FE1_element_10, value=[Ljava.lang.CharSequence;@102efc59}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\BANELE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65156}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65156/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2e23262057968c0d564b670519667aae)] -> id: drag-drop-upload]
-Session ID: 2e23262057968c0d564b670519667aae
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-	at com.automation.StepDefinition.FileUpload.user_drags_a_file_from_system_into_the_website_upload_box(FileUpload.java:66)
-	at ?.user drags a file from system into the website upload box(file:///C:/Users/BaneleMlamleli/Documents/Programming/The_Internet/src/test/java/com/automation/Features/FileUpload.feature:14)
-]]>
-</failure>
+<testsuite name="Cucumber" time="22.777" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Demonstration of Floating Menu." name="Floating menu selection" time="22.363">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on File Upload.............................................passed
-Then user drags a file from system into the website upload box..............failed
+When user clicks on Floating Menu...........................................passed
+Then user clicks on the individual menu tabs................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
