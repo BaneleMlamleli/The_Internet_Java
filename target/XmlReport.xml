@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="31.721" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="Demonstration of password reset." name="Password reset - Example #1.1" time="16.45">
+<testsuite name="Cucumber" time="31.95" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Demonstration of a secure login area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.." name="Correct and incorrect login credentials - Example #1.1" time="8.22">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on Forgot Password.........................................passed
-Then user enter their email address 20489-52348oiweogg#l;aksdf.com.test.....passed
-And user clicks on retrieve password button.................................passed
+When user clicks on Form Authentication.....................................passed
+Then user enter tomsmith and xxxx for authentication........................passed
+And login status is confirmed...............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Demonstration of password reset." name="Password reset - Example #1.2" time="14.788">
+<testcase classname="Demonstration of a secure login area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.." name="Correct and incorrect login credentials - Example #1.2" time="8.035">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on Forgot Password.........................................passed
-Then user enter their email address mlamlelibanele@yahoo.com................passed
-And user clicks on retrieve password button.................................passed
+When user clicks on Form Authentication.....................................passed
+Then user enter Xxxx and SuperSecretPassword! for authentication............passed
+And login status is confirmed...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Demonstration of a secure login area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.." name="Correct and incorrect login credentials - Example #1.3" time="15.4">
+<system-out><![CDATA[
+Given a user is on the website home page....................................passed
+When user clicks on Form Authentication.....................................passed
+Then user enter tomsmith and SuperSecretPassword! for authentication........passed
+And login status is confirmed...............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

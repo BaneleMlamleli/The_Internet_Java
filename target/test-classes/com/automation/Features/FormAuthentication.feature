@@ -6,5 +6,10 @@ Feature: Demonstration of a secure login area. Enter tomsmith for the username a
         When user clicks on Form Authentication
 
     Scenario: Correct and incorrect login credentials
-        Then user enter username and password
+        Then user enter <username> and <password> for authentication
         And login status is confirmed
+        Examples:
+            | username | password             |
+            | tomsmith | xxxx                 |
+            | Xxxx     | SuperSecretPassword! |
+            | tomsmith | SuperSecretPassword! |
