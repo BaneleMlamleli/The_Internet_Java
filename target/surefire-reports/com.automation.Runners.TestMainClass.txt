@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: com.automation.Runners.TestMainClass
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.333 s - in com.automation.Runners.TestMainClass
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 16.476 s <<< FAILURE! - in com.automation.Runners.TestMainClass
+Drag and dop file to upload(Demonstration of File upload. Choose a file on your system and then click upload. Or, drag and drop a file into the area below.)  Time elapsed: 14.261 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=114.0.5735.134)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e23262057968c0d564b670519667aae, sendKeysToElement {id=110AB10BE74FBD4F9B572E853C211FE1_element_10, value=[Ljava.lang.CharSequence;@102efc59}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\BANELE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65156}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65156/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2e23262057968c0d564b670519667aae)] -> id: drag-drop-upload]
+Session ID: 2e23262057968c0d564b670519667aae
+
