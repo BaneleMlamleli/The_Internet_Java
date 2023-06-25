@@ -1,27 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="31.95" tests="3" skipped="0" failures="0" errors="0">
-<testcase classname="Demonstration of a secure login area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.." name="Correct and incorrect login credentials - Example #1.1" time="8.22">
+<testsuite name="Cucumber" time="7.437" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Demonstration of Frames" name="Nested Frames" time="7.309">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//frame[@name='frame-bottom']&quot;}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c81510d43e5f07c390d2f12ecc0710d, findElement {using=xpath, value=//frame[@name='frame-bottom']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ciphe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57735}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57735/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c81510d43e5f07c390d2f12ecc0710d">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//frame[@name='frame-bottom']"}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c81510d43e5f07c390d2f12ecc0710d, findElement {using=xpath, value=//frame[@name='frame-bottom']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ciphe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57735}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57735/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c81510d43e5f07c390d2f12ecc0710d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.automation.StepDefinition.Frames.confirm_all_frames_are_displayed(Frames.java:59)
+	at ?.confirm all frames are displayed(file:///C:/Users/ciphe/Documents/Programming_local/The_Internet/src/test/java/com/automation/Features/Frames.feature:10)
+]]>
+</failure>
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on Form Authentication.....................................passed
-Then user enter tomsmith and xxxx for authentication........................passed
-And login status is confirmed...............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Demonstration of a secure login area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.." name="Correct and incorrect login credentials - Example #1.2" time="8.035">
-<system-out><![CDATA[
-Given a user is on the website home page....................................passed
-When user clicks on Form Authentication.....................................passed
-Then user enter Xxxx and SuperSecretPassword! for authentication............passed
-And login status is confirmed...............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Demonstration of a secure login area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.." name="Correct and incorrect login credentials - Example #1.3" time="15.4">
-<system-out><![CDATA[
-Given a user is on the website home page....................................passed
-When user clicks on Form Authentication.....................................passed
-Then user enter tomsmith and SuperSecretPassword! for authentication........passed
-And login status is confirmed...............................................passed
+When user clicks on Frames..................................................passed
+Then user clicks on Nested Frames...........................................passed
+And confirm all frames are displayed........................................failed
 ]]></system-out>
 </testcase>
 </testsuite>
