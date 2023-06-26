@@ -44,21 +44,29 @@ public class Frames {
         webDriver.switchTo().frame("frame-top");
         boolean frameLeft = webDriver.findElement(By.xpath("//frame[@src='/frame_left']")).isDisplayed();
         System.out.println("frame-left: " + frameLeft);
-        
+
         boolean frameMiddle = webDriver.findElement(By.xpath("//frame[@src='/frame_middle']")).isDisplayed();
         System.out.println("frame-middle: " + frameMiddle);
-        
+
         boolean frameRight = webDriver.findElement(By.xpath("//frame[@src='/frame_right']")).isDisplayed();
         System.out.println("frame-right: " + frameRight);
 
         // Return to the top level
         webDriver.switchTo().parentFrame();
-        
+
         // Switching to the bottom frame
         webDriver.switchTo().frame(1);
         //body
         System.out.println("Text of bottom frame: " + webDriver.findElement(By.tagName("body")).getText());
         boolean frameBottom = webDriver.findElement(By.tagName("body")).isDisplayed();
         System.out.println("frame-bottom: " + frameBottom);
+    }
+    
+    @Then("user clicks on iFrames and confirms iframe is displayed")
+    public void user_clicks_on_iFrames_and_confirms_iframe_is_displayed() {
+        webDriver.findElement(By.xpath("//a[normalize-space()='iFrame']")).click();
+        webDriver.switchTo().frame("mce_0_ifr");
+        boolean iFrame = webDriver.findElement(By.xpath("//p[normalize-space()='Your content goes here.']")).isDisplayed();
+        System.out.println("iFrame: " + iFrame + ", iFrame text: " + webDriver.findElement(By.xpath("//p[normalize-space()='Your content goes here.']")).getText());
     }
 }
