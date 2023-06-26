@@ -52,11 +52,13 @@ public class Frames {
         System.out.println("frame-right: " + frameRight);
 
         // Return to the top level
-        webDriver.switchTo().parentFrame(); //.defaultContent();
-
+        webDriver.switchTo().parentFrame();
+        
         // Switching to the bottom frame
-        webDriver.switchTo().frame("frame-bottom");
-        boolean frameBottom = webDriver.findElement(By.xpath("//frame[@name='frame-bottom']")).isDisplayed();
+        webDriver.switchTo().frame(1);
+        //body
+        System.out.println("Text of bottom frame: " + webDriver.findElement(By.tagName("body")).getText());
+        boolean frameBottom = webDriver.findElement(By.tagName("body")).isDisplayed();
         System.out.println("frame-bottom: " + frameBottom);
     }
 }
