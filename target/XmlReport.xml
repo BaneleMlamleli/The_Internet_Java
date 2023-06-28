@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="14.725" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Demonstration of infinite scrolling" name="Infinite scrolling" time="14.144">
+<testsuite name="Cucumber" time="12.237" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Demonstration of a number input text field" name="number input text field" time="11.754">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on Infinite Scroll.........................................passed
-Then confirm infinite scrolling.............................................passed
+When user clicks on Inputs..................................................passed
+Then user increase and decrease the numbers.................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
