@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="12.612" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Demonstration of mouse hovering on images" name="Mouse hovering on images" time="12.18">
+<testsuite name="Cucumber" time="14.725" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Demonstration of infinite scrolling" name="Infinite scrolling" time="14.144">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on Hovers..................................................passed
-Then user hovers on an image to display text below it.......................passed
+When user clicks on Infinite Scroll.........................................passed
+Then confirm infinite scrolling.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
