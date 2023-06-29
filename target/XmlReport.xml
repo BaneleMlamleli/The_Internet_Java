@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="11.673" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Demonstration of JavaScript Onload Event Error" name="JavaScript Onload Event Error" time="11.217">
+<testsuite name="Cucumber" time="12.119" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Demonstration of key presses used to interact with a website (e.g., tab order, enter, escape, etc)" name="JavaScript Onload Event Error" time="11.527">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on JavaScript Onload Event Error...........................passed
-Then Confirm onload event error.............................................passed
+When user clicks on Key Press...............................................passed
+Then user presses any keyboard buttons......................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
