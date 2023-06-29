@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="12.237" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Demonstration of a number input text field" name="number input text field" time="11.754">
+<testsuite name="Cucumber" time="26.882" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Demonstration of JQueryUI Menu" name="JQueryUI - Downloading documents" time="14.923">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on Inputs..................................................passed
-Then user increase and decrease the numbers.................................passed
+When user clicks on JQueryUI Menu...........................................passed
+Then user download all documents............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Demonstration of JQueryUI Menu" name="Back to JQuery Menu" time="11.388">
+<system-out><![CDATA[
+Given a user is on the website home page....................................passed
+When user clicks on JQueryUI Menu...........................................passed
+And user clicks on back to jquery ui........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
