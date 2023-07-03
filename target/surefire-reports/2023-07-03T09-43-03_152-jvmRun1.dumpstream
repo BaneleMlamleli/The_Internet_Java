@@ -1,0 +1,93 @@
+# Created at 2023-07-03T09:43:31.161
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2023-07-03T09:43:32.638
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:34.519
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:36.539
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:37.969
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:39.471
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:41.040
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:42.673
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:44.037
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:45.900
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:47.788
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:49.229
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:50.664
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:52.403
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:53.964
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:55.328
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:57.002
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:58.408
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:43:59.779
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:44:01.136
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:44:02.646
+Unexpected IOException with stream: ==============
+
+
+# Created at 2023-07-03T09:44:04.099
+Unexpected IOException with stream: ==============
+
+
