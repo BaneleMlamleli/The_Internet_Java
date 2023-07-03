@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="18.382" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Demonstration of pages that have very large and deeply nested page layouts, which can trigger odd rendering issues and test performance bottlenecks (depending on your locator strategy). These examples are nested 50 levels deep." name="Test rows and column values" time="17.953">
+<testsuite name="Cucumber" time="13.196" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Demonstration of notification message." name="Notification Message" time="12.754">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on Large And Deep DOM......................................passed
-Then test all rows and column values........................................passed
+When user clicks on Notification Message....................................passed
+Then test all notification messages.........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
