@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="13.196" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Demonstration of notification message." name="Notification Message" time="12.754">
+<testsuite name="Cucumber" time="13.495" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Demonstration of separation from directly returning a redirection status code, in that some browsers cannot handle a raw redirect status code without a destination page as part of the HTTP response." name="Redirect Link" time="12.965">
 <system-out><![CDATA[
 Given a user is on the website home page....................................passed
-When user clicks on Notification Message....................................passed
-Then test all notification messages.........................................passed
+When user clicks on Redirect Link...........................................passed
+And user clicks link to trigger the redirect................................passed
+Then test listed status codes...............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
