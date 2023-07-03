@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.automation.Runners.TestMainClass
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.548 s - in com.automation.Runners.TestMainClass
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.017 s - in com.automation.Runners.TestMainClass
