@@ -1,21 +1,17 @@
 package com.automation.StepDefinition;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import com.automation.core.BaseClass;
 import io.cucumber.java.en.*;
 
-public class ABTesting {
-    WebDriver webDriver = null;
-    // final String BROWSER = "chrome"; //firefox, edge
+public class ABTesting extends BaseClass{
+    // WebDriver webDriver = null;
+    final String BROWSER = "chrome"; //firefox, edge
 
-    // @Given("a user is on the website home page")
-    // public void a_user_is_on_the_website_home_page() {
-    //     System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
-    //     webDriver = new ChromeDriver();
-    //     webDriver.manage().window().maximize();
-    //     webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
-    // }
+    @Given("a user is on the website home page")
+    public void a_user_is_on_the_website_home_page() {
+        BaseClass.launchBrowserWithWebsiteHomePage(BROWSER);
+    }
 
     @When("the user click on the A\\/B Testing element")
     public void the_user_click_on_the_a_b_testing_element() {
@@ -32,11 +28,5 @@ public class ABTesting {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-    }
-
-    @And("the driver process is killed")
-    public void the_driver_process_is_killed() {
-        webDriver.close();
-        webDriver.quit();
     }
 }

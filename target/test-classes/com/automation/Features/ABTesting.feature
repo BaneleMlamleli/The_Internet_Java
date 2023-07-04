@@ -1,4 +1,4 @@
-@AB_Test_Variation
+@ABTesting
 Feature: A/B Test variation 1
 
     Background: landing page
@@ -7,4 +7,3 @@ Feature: A/B Test variation 1
     Scenario: Test clicking redirection element
         When the user click on the A/B Testing element
         Then the user is redirected to the A/B Testing variation page
-        And the driver process is killed

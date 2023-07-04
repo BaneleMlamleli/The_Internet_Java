@@ -1,4 +1,4 @@
-@add_and_remove_element
+@AddAndRemoveElement
 Feature: Add and remove an element
 
     Background: landing page
