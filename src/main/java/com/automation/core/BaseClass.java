@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class BaseClass {
     public static WebDriver webDriver = null;
@@ -18,7 +19,9 @@ public class BaseClass {
                 break;
             case "firefox":
                 System.setProperty("webdriver.gecko.driver", "c:\\browser_webdrivers\\geckodriver.exe");
-                webDriver = new FirefoxDriver();
+                FirefoxOptions options = new FirefoxOptions();
+                options.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
+                webDriver = new FirefoxDriver(options);
                 webDriver.manage().window().maximize();
                 webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
                 break;
@@ -34,7 +37,7 @@ public class BaseClass {
         }
     }
     
-    public static void close_browser() {
+    public static void closeBrowser() {
         webDriver.close();
         webDriver.quit();
     }

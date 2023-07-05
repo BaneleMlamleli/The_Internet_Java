@@ -4,27 +4,18 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.automation.core.BaseClass;
 import io.cucumber.java.en.*;
 
-public class RedirectLink {
-    WebDriver webDriver = null;
-    
-    // @Given("a user is on the website home page")
-    // public void a_user_is_on_the_website_home_page() {
-    //     System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
-    //     webDriver = new ChromeDriver();
-    //     webDriver.manage().window().maximize();
-    //     webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
-    //     try {
-    //         Thread.sleep(2000);
-    //     } catch (InterruptedException e) {
-    //         e.printStackTrace();
-    //     }
-    // }
+public class RedirectLink extends BaseClass{
+    final String BROWSER = "chrome"; //chrome, firefox, edge
+
+    @Given("a user is on the website home page")
+    public void a_user_is_on_the_website_home_page() {
+        BaseClass.launchBrowserWithWebsiteHomePage(BROWSER);
+    }
 
     @When("user clicks on Redirect Link")
     public void user_clicks_on_redirect_link() {

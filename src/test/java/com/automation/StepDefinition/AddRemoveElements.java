@@ -1,27 +1,19 @@
 package com.automation.StepDefinition;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import com.automation.core.BaseClass;
 
 import io.cucumber.java.en.*;
 
-public class AddRemoveElements {
-    WebDriver webDriver = null;
+public class AddRemoveElements extends BaseClass{
     int amountOfDeleteButtons = 0;
 
-    // @Given("a user is on the website home page")
-    // public void a_user_is_on_the_website_home_page() {
-    //     System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
-    //     webDriver = new ChromeDriver();
-    //     webDriver.manage().window().maximize();
-    //     webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
-    //     try {
-    //         Thread.sleep(2000);
-    //     } catch (InterruptedException e) {
-    //         e.printStackTrace();
-    //     }
-    // }
+    final String BROWSER = "chrome"; //chrome, firefox, edge
+
+    @Given("a user is on the website home page")
+    public void a_user_is_on_the_website_home_page() {
+        BaseClass.launchBrowserWithWebsiteHomePage(BROWSER);
+    }
 
     @When("the user clicks on the AddRemoveElements on the website")
     public void the_user_clicks_on_the_AddRemoveElements_on_the_website() {
@@ -96,10 +88,9 @@ public class AddRemoveElements {
         //     System.err.println("Element either does not exist or the locator is incorrect");
         // }
     }
-
-    // @And("the driver process is killed")
-    // public void the_driver_process_is_killed() {
-    //     webDriver.close();
-    //     webDriver.quit();
-    // }
+    
+    @And("close browser")
+    public void close_browser() {
+        BaseClass.closeBrowser();
+    }
 }

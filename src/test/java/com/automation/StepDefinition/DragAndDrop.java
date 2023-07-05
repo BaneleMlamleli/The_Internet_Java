@@ -1,28 +1,21 @@
 package com.automation.StepDefinition;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+
+import com.automation.core.BaseClass;
+
 import io.cucumber.java.en.*;
 
-public class DragAndDrop {
-    WebDriver webDriver = null;
+public class DragAndDrop extends BaseClass {
     Actions actions = null;
+    final String BROWSER = "chrome"; //chrome, firefox, edge
 
-    // @Given("a user is on the website home page")
-    // public void a_user_is_on_the_website_home_page() {
-    //     System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
-    //     webDriver = new ChromeDriver();
-    //     webDriver.manage().window().maximize();
-    //     webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
-    //     try {
-    //         Thread.sleep(2000);
-    //     } catch (InterruptedException e) {
-    //         e.printStackTrace();
-    //     }
-    // }
+    @Given("a user is on the website home page")
+    public void a_user_is_on_the_website_home_page() {
+        BaseClass.launchBrowserWithWebsiteHomePage(BROWSER);
+    }
 
     @When("user clicks on drag and drop element")
     public void user_clicks_on_drag_and_drop_element() {

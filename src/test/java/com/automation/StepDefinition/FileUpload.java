@@ -1,36 +1,19 @@
 package com.automation.StepDefinition;
 
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import com.automation.core.BaseClass;
 
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 
-public class FileUpload {
-    WebDriver webDriver = null;
-    Actions actions = null;
+public class FileUpload  extends BaseClass {Actions actions = null;
 
-    // @Given("a user is on the website home page")
-    // public void a_user_is_on_the_website_home_page() {
-    //     System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
-    //     webDriver = new ChromeDriver();
-    //     webDriver.manage().window().maximize();
-    //     webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
-    //     try {
-    //         Thread.sleep(2000);
-    //     } catch (InterruptedException e) {
-    //         e.printStackTrace();
-    //     }
-    // }
+    final String BROWSER = "chrome"; //chrome, firefox, edge
+
+    @Given("a user is on the website home page")
+    public void a_user_is_on_the_website_home_page() {
+        BaseClass.launchBrowserWithWebsiteHomePage(BROWSER);
+    }
 
     @When("user clicks on File Upload")
     public void user_clicks_on_file_upload() {

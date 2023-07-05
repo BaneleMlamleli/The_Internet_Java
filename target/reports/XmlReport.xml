@@ -1,10 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="12.038" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="A/B Test variation 1" name="Test clicking redirection element" time="11.532">
-<system-out><![CDATA[
-Given a user is on the website home page....................................passed
-When the user click on the A/B Testing element..............................passed
-Then the user is redirected to the A/B Testing variation page...............passed
-]]></system-out>
-</testcase>
+<testsuite name="Cucumber" time="0.434" tests="0" skipped="0" failures="0" errors="0">
 </testsuite>
