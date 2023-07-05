@@ -18,10 +18,10 @@ public class JQueryUIMenu extends BaseClass {
     
     final String BROWSER = "chrome"; //chrome, firefox, edge
 
-    @Given("a user is on the website home page")
-    public void a_user_is_on_the_website_home_page() {
-        BaseClass.launchBrowserWithWebsiteHomePage(BROWSER);
-    }
+    // @Given("a user is on the website home page")
+    // public void a_user_is_on_the_website_home_page() {
+    //     BaseClass.launchBrowserWithWebsiteHomePage(BROWSER);
+    // }
 
     @When("user clicks on JQueryUI Menu")
     public void user_clicks_on_JQueryUI_Menu() {

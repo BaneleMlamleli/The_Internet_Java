@@ -1,7 +1,6 @@
 package com.automation.StepDefinition;
 
 import org.openqa.selenium.By;
-
 import com.automation.core.BaseClass;
 import io.cucumber.java.en.*;
 
@@ -25,10 +24,5 @@ public class ABTesting extends BaseClass{
         boolean val = pageSource.contains("A/B Test Variation 1");
         System.out.println((val) ? "page test successful" : "page test failed");
         Thread.sleep(3);
-    }
-    
-    @And("close browser")
-    public void close_browser() {
-        BaseClass.closeBrowser();
     }
 }

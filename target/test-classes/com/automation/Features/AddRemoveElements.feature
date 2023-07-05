@@ -9,4 +9,4 @@ Feature: Add and remove an element
         And the user clicks on the button AddElement
         Then the button Delete is displayed
         And the user clicks on the button Delete
-        And close browser
+# And close browser

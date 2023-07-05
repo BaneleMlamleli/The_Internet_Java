@@ -10,10 +10,10 @@ public class AddRemoveElements extends BaseClass{
 
     final String BROWSER = "chrome"; //chrome, firefox, edge
 
-    @Given("a user is on the website home page")
-    public void a_user_is_on_the_website_home_page() {
-        BaseClass.launchBrowserWithWebsiteHomePage(BROWSER);
-    }
+    // @Given("a user is on the website home page")
+    // public void a_user_is_on_the_website_home_page() {
+    //     BaseClass.launchBrowserWithWebsiteHomePage(BROWSER);
+    // }
 
     @When("the user clicks on the AddRemoveElements on the website")
     public void the_user_clicks_on_the_AddRemoveElements_on_the_website() {
@@ -89,8 +89,8 @@ public class AddRemoveElements extends BaseClass{
         // }
     }
     
-    @And("close browser")
-    public void close_browser() {
-        BaseClass.closeBrowser();
-    }
+    // @And("close browser")
+    // public void close_browser() {
+    //     BaseClass.closeBrowser();
+    // }
 }
