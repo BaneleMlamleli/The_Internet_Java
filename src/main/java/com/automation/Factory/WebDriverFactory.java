@@ -35,7 +35,7 @@ public class WebDriverFactory {
         try{
             switch (browser) {
                 case "chrome":
-                    System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
+                    System.setProperty("webdriver.chrome.driver", "C:\\Users\\ciphe\\Documents\\Programming_local\\webdrivers\\chromedriver.exe");
                     webDriver = new ChromeDriver();
                     webDriver.manage().window().maximize();
                     webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
@@ -45,7 +45,7 @@ public class WebDriverFactory {
                         e.printStackTrace();
                     };break;
                 case "firefox":
-                    System.setProperty("webdriver.firefox.driver", "c:\\browser_webdrivers\\geckodriver.exe");
+                    System.setProperty("webdriver.firefox.driver", "C:\\Users\\ciphe\\Documents\\Programming_local\\webdrivers\\geckodriver.exe");
                     webDriver = new FirefoxDriver();
                     webDriver.manage().window().maximize();
                     webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
@@ -55,7 +55,7 @@ public class WebDriverFactory {
                         e.printStackTrace();
                     };break;
                 case "edge":
-                    System.setProperty("webdriver.edge.driver", "c:\\browser_webdrivers\\msedgedriver.exe");
+                    System.setProperty("webdriver.edge.driver", "C:\\Users\\ciphe\\Documents\\Programming_local\\webdrivers\\msedgedriver.exe");
                     webDriver = new EdgeDriver();
                     webDriver.manage().window().maximize();
                     webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");

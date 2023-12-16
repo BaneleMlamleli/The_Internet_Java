@@ -20,7 +20,7 @@ public class ABTesting extends BaseClass{
     @Then("the user is redirected to the A\\/B Testing variation page")
     public void the_user_is_redirected_to_the_a_b_testing_variation_page() throws InterruptedException {
         String pageSource = webDriver.getPageSource();
-        System.out.println(pageSource);
+        // System.out.println(pageSource);
         boolean val = pageSource.contains("A/B Test Variation 1");
         System.out.println((val) ? "page test successful" : "page test failed");
         Thread.sleep(3);

@@ -1,0 +1,4 @@
+com\automation\App.class
+com\automation\utility\Hooks.class
+com\automation\core\BaseClass.class
+com\automation\Factory\WebDriverFactory.class

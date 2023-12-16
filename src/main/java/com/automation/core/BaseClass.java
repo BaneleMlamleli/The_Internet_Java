@@ -12,13 +12,13 @@ public class BaseClass {
     public static void launchBrowserWithWebsiteHomePage(String browser) {
         switch (browser) {
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", "c:\\browser_webdrivers\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "c:\\Users\\ciphe\\Documents\\Programming_local\\webdrivers\\chromedriver.exe");
                 webDriver = new ChromeDriver();
                 webDriver.manage().window().maximize();
                 webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
                 break;
             case "firefox":
-                System.setProperty("webdriver.gecko.driver", "c:\\browser_webdrivers\\geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "c:\\Users\\ciphe\\Documents\\Programming_local\\webdrivers\\geckodriver.exe");
                 FirefoxOptions options = new FirefoxOptions();
                 options.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
                 webDriver = new FirefoxDriver(options);
@@ -26,7 +26,7 @@ public class BaseClass {
                 webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
                 break;
             case "edge":
-                System.setProperty("webdriver.edge.driver", "c:\\browser_webdrivers\\msedgedriver.exe");
+                System.setProperty("webdriver.edge.driver", "c:\\Users\\ciphe\\Documents\\Programming_local\\webdrivers\\msedgedriver.exe");
                 webDriver = new EdgeDriver();
                 webDriver.manage().window().maximize();
                 webDriver.navigate().to("https://the-internet.kineticskunk.co.za/");
